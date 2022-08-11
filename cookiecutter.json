@@ -1,5 +1,6 @@
 {
-    "directory_name": "Project_X",
+    "project_name": "Project_X",
     "file_name": "main",
-    "greeting_recipient": "World"
+    "greeting_recipient": "World",
+    "author": "Harshad Hegde <hhegde@lbl.gov>"
 }
