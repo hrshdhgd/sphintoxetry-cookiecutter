@@ -35,5 +35,3 @@ jobs:
 
       - name: Test with pytest and generate coverage file
         run: poetry run tox -e py
-
-      

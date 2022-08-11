@@ -1,5 +1,8 @@
+"""Main python file."""
 
 def main():
+    """API."""
+
     print("Hello, {{cookiecutter.greeting_recipient}}!")
 
 
