@@ -7,7 +7,6 @@ license = "BSD 3"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-tox = "^3.25.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.1.2"
