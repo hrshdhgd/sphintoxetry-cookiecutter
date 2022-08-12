@@ -2,5 +2,7 @@
     "project_name": "Project_X",
     "file_name": "main",
     "greeting_recipient": "World",
-    "author": "Harshad Hegde <hhegde@lbl.gov>"
+    "author": "Harshad Hegde <hhegde@lbl.gov>",
+    "github_token_for_doc_deployment": "GH_TOKEN",
+    "github_token_for_pypi_deployment": "PYPI_TOKEN"
 }
