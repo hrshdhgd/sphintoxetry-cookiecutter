@@ -1,2 +1,2 @@
-# bbop-cookiecutter
-A Cookiecutter template for BBOP work
+# poeTox-cookiecutter
+A Cookiecutter template for projects using `poetry` + `tox`
