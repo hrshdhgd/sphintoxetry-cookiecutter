@@ -22,6 +22,14 @@ sphinx-click = "^4.3.0"
 [tool.poetry.scripts]
 {{cookiecutter.project_name}} = "{{cookiecutter.project_name}}.cli:main"
 
+[tool.poetry.extras]
+docs = [
+    "sphinx",
+    "sphinx_rtd_theme",
+    "sphinx-autodoc-typehints",
+    "sphinx-click",
+    ]
+
 [tool.black]
 line-length = 79
 target-version = ["py38", "py39", "py310"]
