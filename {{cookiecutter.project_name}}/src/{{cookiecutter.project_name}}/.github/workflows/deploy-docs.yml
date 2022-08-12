@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v3.0.2
       with:
         fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
     
@@ -17,7 +17,7 @@ jobs:
         python-version: 3.9
 
     - name: Install Poetry.
-      uses: snok/install-poetry@v1.3
+      uses: snok/install-poetry@v1.3.1
 
     - name: Install dependencies.
       run: |
@@ -25,7 +25,7 @@ jobs:
         
     - name: Build documentation.
       run: |
-        echo ${{ secrets.GH_TOKEN }} >> src/{{cookiecutter.project_name}}/token.txt
+        echo ${{ "{{" }} secrets.GH_TOKEN ${{ "}}" }} >> src/{{cookiecutter.project_name}}/token.txt
         mkdir gh-pages
         touch gh-pages/.nojekyll
         cd docs/
@@ -33,7 +33,7 @@ jobs:
         cp -r _build/* ../gh-pages/
     
     - name: Deploy documentation.
-      if: ${{ github.event_name == 'push' }}
+      if: ${{ "{{" }} github.event_name == 'push' ${{ "}}" }}
       uses: JamesIves/github-pages-deploy-action@v4.3.0
       with:
         branch: gh-pages
