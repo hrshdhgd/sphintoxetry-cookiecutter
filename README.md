@@ -3,7 +3,7 @@ A Cookiecutter template for projects using `Sphinx` + `tox` + `poetry`. This tem
 
 # Getting started
 
-First, you need to install the [Cookiecutter](https://github.com/cookiecutter/cookiecutter) package.
+First, you need to install the [cookiecutter](https://github.com/cookiecutter/cookiecutter) package.
 
 ```
 pip install cookiecutter
