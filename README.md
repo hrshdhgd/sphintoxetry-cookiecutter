@@ -78,4 +78,28 @@ This should run all the bullets mentioned above under the `tox` configuration an
 
 And as the last line says: `congratulations :)`!! Your project is ready to evolve!
 
+# Final test to see everything is wired properly
+
+On your command line, type your `project_name`. In my case the project name is `ABCD`:
+```
+ABCD --help
+```
+It should look like this:
+```
+Usage: ABCD [OPTIONS] COMMAND [ARGS]...
+
+  CLI for ABCD.
+
+  :param verbose: Verbosity while running. :param quiet: Boolean to be quiet
+  or verbose.
+
+Options:
+  -v, --verbose
+  -q, --quiet TEXT
+  --version         Show the version and exit.
+  --help            Show this message and exit.
+
+Commands:
+  run  Run the ABCD's demo command.
+```
 
