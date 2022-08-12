@@ -76,6 +76,6 @@ This should run all the bullets mentioned above under the `tox` configuration an
   congratulations :)
 ```
 
-And as the last line says: `congratulations :)`!! The project is ready to evolve!
+And as the last line says: `congratulations :)`!! Your project is ready to evolve!
 
 
