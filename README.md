@@ -1,2 +1,2 @@
-# poeTox-cookiecutter
-A Cookiecutter template for projects using `poetry` + `tox`
+# ptoxetry-cookiecutter
+A Cookiecutter template for projects using `tox` + `poetry`
