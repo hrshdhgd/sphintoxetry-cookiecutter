@@ -1,10 +1,9 @@
 """Main python file."""
 
-def main():
-    """API."""
-
+def demo():
+    """Define API."""
     print("Hello, {{cookiecutter.greeting_recipient}}!")
 
 
 if __name__ == '__main__':
-    main()
+    demo()
