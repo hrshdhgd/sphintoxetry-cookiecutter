@@ -3,19 +3,19 @@ A Cookiecutter template for projects using `Sphinx` + `tox` + `poetry`. This tem
 
 # Getting started
 
-First, you need to install the [cookiecutter](https://github.com/cookiecutter/cookiecutter) package.
+First, install the [cookiecutter](https://github.com/cookiecutter/cookiecutter) package.
 
 ```
 pip install cookiecutter
 ```
 
-Next, you need to create your project using the `Sphintoxetry-cookiecutter` template.
+Next, create a project using the `Sphintoxetry-cookiecutter` template.
 ```
 cookiecutter https://github.com/hrshdhgd/sphintoxetry-cookiecutter
 ```
 
-This kickstarts an interactive session where you establish the following:
- - `project_name`: The name of the project. [defaults to Project_X]
+This kickstarts an interactive session where you declare the following:
+ - `project_name`: Name of the project. [defaults to Project_X]
  - `file_name`: The name of the main python file. [defaults to `main` for `main.py`]
  - `greeting_recipient`: Just a string that will be displyed when the boilerplate is invoked. [defaults to 'World` as in `Hello World`]
  - `author`: The author of the project. [defaults to Harshad Hegde <hhegde@lbl.gov>]
@@ -82,24 +82,9 @@ And as the last line says: `congratulations :)`!! Your project is ready to evolv
 
 On your command line, type your `project_name`. In my case the project name is `ABCD`:
 ```
-ABCD --help
+ABCD run
 ```
-It should look like this:
-```
-Usage: ABCD [OPTIONS] COMMAND [ARGS]...
+Should return `Hello, **greeting_recipient value chosen during setup**`
 
-  CLI for ABCD.
 
-  :param verbose: Verbosity while running. :param quiet: Boolean to be quiet
-  or verbose.
-
-Options:
-  -v, --verbose
-  -q, --quiet TEXT
-  --version         Show the version and exit.
-  --help            Show this message and exit.
-
-Commands:
-  run  Run the ABCD's demo command.
-```
 
