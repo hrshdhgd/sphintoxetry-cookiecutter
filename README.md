@@ -3,15 +3,15 @@ A Cookiecutter template for projects using `Sphinx` + `tox` + `poetry`. This tem
 
 # Getting started
 
-First, install the [cookiecutter](https://github.com/cookiecutter/cookiecutter) package.
+First, install the [cruft](https://github.com/cruft/cruft) package. Cruft enables keeping projects up-to-date with future updates made to the original template.
 
 ```
-pip install cookiecutter
+pip install cruft
 ```
 
 Next, create a project using the `Sphintoxetry-cookiecutter` template.
 ```
-cookiecutter https://github.com/hrshdhgd/sphintoxetry-cookiecutter
+cruft create https://github.com/hrshdhgd/sphintoxetry-cookiecutter
 ```
 
 This kickstarts an interactive session where you declare the following:
