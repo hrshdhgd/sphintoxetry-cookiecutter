@@ -105,7 +105,7 @@ Otherwise, it will indicate that the project's boilerplate code is not up-to-dat
 FAILURE: Project's cruft is out of date! Run `cruft update` to clean this mess up.
 ```
 
-For viewing the difference, run `cruft diff`. This shows the difference between the project boilerplate code and the template's latest version.
+For viewing the difference, run `cruft diff`. This shows the difference between the project's boilerplate code and the template's latest version.
 
 After running `cruft update`, the project's boilerplate code will be updated to the latest version of the template.
 
