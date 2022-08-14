@@ -9,7 +9,7 @@ First, install the [cruft](https://github.com/cruft/cruft) package. Cruft enable
 pip install cruft
 ```
 
-Next, create a project using the `Sphintoxetry-cookiecutter` template.
+Next, create a project using the `sphintoxetry-cookiecutter` template.
 ```
 cruft create https://github.com/hrshdhgd/sphintoxetry-cookiecutter
 ```
