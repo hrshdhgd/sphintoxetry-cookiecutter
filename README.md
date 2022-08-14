@@ -86,18 +86,24 @@ ABCD run
 ```
 Should return `Hello, **greeting_recipient value chosen during setup**`
 
-# Check if the project template has been updated in the future
+# Check if the project's boilerplate code is up-to-date in the future
 
-In order to be up-to-date with the project template boilerplate code, first check if the template has been updated by running:
+In order to be up-to-date with the template, first check if there is a mismatch between the project's boilerplate code and the template by running:
 ```
 cruft check
 ```
-This shows the difference between the current project and the latest version of the project template.. If the project is up-to-date with the template:
+
+This indicates if there is a difference between the current project's boilerplate code and the latest version of the project template. If the project is up-to-date with the template:
 ```
 SUCCESS: Good work! Project's cruft is up to date and as clean as possible :).
 ```
-Otherwise, it indicates that the project template is not up-to-date by the following:
+
+Otherwise, it will indicate that the project's boilerplate code is not up-to-date by the following:
 ```
 FAILURE: Project's cruft is out of date! Run `cruft update` to clean this mess up.
 ```
+
+For viewing the difference, run `cruft diff`. This shows the difference between the project boilerplate code and the template's latest version.
+
+After running `cruft update`, the project's boilerplate code will be updated to the latest version of the template.
 
