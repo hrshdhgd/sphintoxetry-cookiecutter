@@ -1,6 +1,6 @@
-# {{cookeiecutter.project_name}}
+# {{cookiecutter.project_name}}
 
-{{cookeiecutter.project_description}}
+{{cookiecutter.project_description}}
 
 # Acknowledgements
 
