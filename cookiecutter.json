@@ -1,6 +1,6 @@
 {
     "project_name": "Project_X",
-    "project_description": "This is a placeholder for the project description.",
+    "project_description": "This is the project description.",
     "file_name": "main",
     "greeting_recipient": "World",
     "author": "Harshad Hegde <hhegde@lbl.gov>",
