@@ -1,5 +1,5 @@
 # Sphintoxetry-cookiecutter
-A Cookiecutter template for projects using [`Sphinx`](https://www.sphinx-doc.org/en/master/) + [`tox`](https://tox.wiki/en/latest/index.html) + [`poetry`](https://python-poetry.org/docs/). This template was developed thanks to the [tutorials by the cookiecutter project](https://cookiecutter.readthedocs.io/en/stable/tutorials/index.html) along with the instructions provided by [HelloCookieCutter1](https://github.com/BruceEckel/HelloCookieCutter1/blob/master/Readme.rst). 
+A [Cookiecutter](https://cookiecutter.readthedocs.io/en/stable/) template for projects using [`Sphinx`](https://www.sphinx-doc.org/en/master/) + [`tox`](https://tox.wiki/en/latest/index.html) + [`poetry`](https://python-poetry.org/docs/). This template was developed thanks to the [tutorials by the cookiecutter project](https://cookiecutter.readthedocs.io/en/stable/tutorials/index.html) along with the instructions provided by [HelloCookieCutter1](https://github.com/BruceEckel/HelloCookieCutter1/blob/master/Readme.rst). 
 
 # Getting started
 
