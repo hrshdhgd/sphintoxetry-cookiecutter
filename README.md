@@ -86,5 +86,18 @@ ABCD run
 ```
 Should return `Hello, **greeting_recipient value chosen during setup**`
 
+# Check if the project template has been updated in the future
 
+In order to be up-to-date with the project template boilerplate code, first check if the template has been updated by running:
+```
+cruft check
+```
+This shows the difference between the current project and the latest version of the project template.. If the project is up-to-date with the template:
+```
+SUCCESS: Good work! Project's cruft is up to date and as clean as possible :).
+```
+Otherwise, it indicates that the project template is not up-to-date by the following:
+```
+FAILURE: Project's cruft is out of date! Run `cruft update` to clean this mess up.
+```
 
