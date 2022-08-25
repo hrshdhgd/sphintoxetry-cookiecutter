@@ -1,13 +1,16 @@
 """Code to run after generating the project."""
-from os.path import realpath, curdir
-from os import rename
-from pathlib import Path
+import os
 
-PROJECT_DIRECTORY = Path(realpath(curdir)).resolve()
-MODULE_NAME = '{{ cookiecutter.project_name }}'
-MODULE_PATH = PROJECT_DIRECTORY.joinpath("src", MODULE_NAME)
+REMOVE_PATHS = [
+    '{% if cookiecutter.packaging != "pip" %} requirements.txt {% endif %}',
+    '{% if cookiecutter.packaging != "poetry" %} poetry.lock {% endif %}',
+]
 
-if "-" in MODULE_NAME:
-    NEW_MODULE_NAME = MODULE_NAME.replace("-", "_")
-    NEW_MODULE_PATH = PROJECT_DIRECTORY.joinpath("src", NEW_MODULE_NAME)
-    rename(MODULE_PATH, NEW_MODULE_PATH)
+
+for path in REMOVE_PATHS:
+    path = path.strip()
+    if path and os.path.exists(path):
+        if os.path.isdir(path):
+            os.rmdir(path)
+        else:
+            os.unlink(path)
