@@ -2,8 +2,8 @@
 import click
 import logging
 
-from {{cookiecutter.project_slug}} import __version__
-from {{cookiecutter.project_slug}}.{{cookiecutter.file_name}} import demo
+from {{cookiecutter.project_name}} import __version__
+from {{cookiecutter.project_name}}.{{cookiecutter.file_name}} import demo
 
 __all__ = [
     "main",
