@@ -1,5 +1,5 @@
 {
-    "project_name": "{% 'Project_X' | slugify %}",
+    "project_name": "{{ 'Project_X' | slugify }}",
     "project_description": "This is the project description.",
     "file_name": "main",
     "greeting_recipient": "World",
