@@ -11,7 +11,7 @@ if not MODULE_REGEX.match(project_name):
     if "-" in project_name:
         invalid_char = "-"
     elif " " in project_name:
-        invalid_char = " "
+        invalid_char = "<space>"
     else:
         print(
             f'ERROR: {project_name} is not a valid Python module name. Try again with a valid project name.'
