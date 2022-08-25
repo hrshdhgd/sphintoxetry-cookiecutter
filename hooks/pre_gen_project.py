@@ -9,8 +9,7 @@ project_name = '{{ cookiecutter.project_name}}'
 
 if not MODULE_REGEX.match(project_name):
     print(
-        f'WARNING: {project_name} is not a valid Python module name.\
-            Using "_" instead of "-" or " " for module name.'
+        f'WARNING: {project_name} is not a valid Python module name. Using "_" instead of "-" or " " for module name.'
     )
 
     # # Exit to cancel project
