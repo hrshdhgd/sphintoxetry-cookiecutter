@@ -1,10 +1,10 @@
 {
-    "project_name": "Project_X",
-    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "project_name": "{% 'Project_X' | slugify %}",
     "project_description": "This is the project description.",
     "file_name": "main",
     "greeting_recipient": "World",
     "author": "Harshad Hegde <hhegde@lbl.gov>",
     "github_token_for_doc_deployment": "GH_TOKEN",
-    "github_token_for_pypi_deployment": "PYPI_TOKEN"
+    "github_token_for_pypi_deployment": "PYPI_TOKEN",
+    "_extensions":["cookiecutter.extensions.SlugifyExtension"]
 }
