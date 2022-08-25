@@ -8,10 +8,9 @@ MODULE_REGEX = re.compile(r'^[_a-zA-Z][_a-zA-Z0-9]+$')
 project_name = '{{ cookiecutter.project_name}}'
 
 if not MODULE_REGEX.match(project_name):
+    invalid_char = " "
     if "-" in project_name:
         invalid_char = "-"
-    elif " " in project_name:
-        invalid_char = " "
     else:
         pass
     # else:
