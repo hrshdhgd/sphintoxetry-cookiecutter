@@ -4,7 +4,7 @@ from os import rename
 from pathlib import Path
 
 PROJECT_DIRECTORY = Path(realpath(curdir)).resolve()
-MODULE_NAME = "{{ cookiecutter.package_name }}"
+MODULE_NAME = '{{ cookiecutter.project_name }}'
 MODULE_PATH = PROJECT_DIRECTORY.joinpath("src", MODULE_NAME)
 
 if "-" in MODULE_NAME:
