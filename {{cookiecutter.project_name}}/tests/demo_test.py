@@ -2,7 +2,7 @@
 
 import unittest
 
-from {{cookiecutter.project_name}} import __version__
+from {{cookiecutter.__project_slug}} import __version__
 
 
 class TestVersion(unittest.TestCase):
