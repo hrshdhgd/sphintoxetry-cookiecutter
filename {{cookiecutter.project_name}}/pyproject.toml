@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "{{cookiecutter.project_name}}"
 authors = ["{{cookiecutter.author}}"]
 license = "BSD 3"
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"
