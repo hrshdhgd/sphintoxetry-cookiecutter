@@ -12,8 +12,8 @@ from {{cookiecutter.__project_slug}} import __version__
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = '{{cookiecutter.project_name}}'
-copyright = 'f"{date.today().year}, {{cookiecutter.author}}'
-author = '{{cookiecutter.author}}'
+copyright = 'f"{date.today().year}, {{cookiecutter.__author}}'
+author = '{{cookiecutter.__author}}'
 release = __version__
 
 # -- General configuration ---------------------------------------------------
