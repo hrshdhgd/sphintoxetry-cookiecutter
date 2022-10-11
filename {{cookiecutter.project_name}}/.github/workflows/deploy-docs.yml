@@ -25,7 +25,7 @@ jobs:
         
     - name: Build documentation.
       run: |
-        echo ${{ "{{" }} secrets.{{cookiecutter.github_token_for_doc_deployment}} {{ "}}" }} >> src/{{cookiecutter.project_name}}/token.txt
+        echo ${{ "{{" }} secrets.{{cookiecutter.github_token_for_doc_deployment}} {{ "}}" }} >> src/{{cookiecutter.__project_slug}}/token.txt
         mkdir gh-pages
         touch gh-pages/.nojekyll
         cd docs/
