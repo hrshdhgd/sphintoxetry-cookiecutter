@@ -29,6 +29,7 @@ docs = [
     "sphinx-rtd-theme",
     "sphinx-autodoc-typehints",
     "sphinx-click",
+    "myst-parser"
     ]
 
 [tool.black]
