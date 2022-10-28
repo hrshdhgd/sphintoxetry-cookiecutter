@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "{{cookiecutter.project_name}}"
-version = "0.1.0"
+version = "0.0.0"
 description = "{{cookiecutter.project_name}}"
 authors = ["{{cookiecutter.__author}}"]
 license = "{{cookiecutter.license}}"
@@ -32,6 +32,11 @@ docs = [
     "sphinx-click",
     "myst-parser"
     ]
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+style = "pep440"
 
 [tool.black]
 line-length = 100
