@@ -65,6 +65,11 @@ pip install poetry
 poetry install
 ```
 
+## Add `poetry-dynamic-versioning` as a plugin
+```
+poetry self add "poetry-dynamic-versioning[plugin]"
+```
+
 ## Run `tox` to see if the setup works
 ```
 poetry run tox

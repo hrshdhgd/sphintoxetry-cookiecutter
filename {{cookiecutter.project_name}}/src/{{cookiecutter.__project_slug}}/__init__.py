@@ -1,9 +1,5 @@
 """{{cookiecutter.project_name}} package."""
-try:
-    from importlib import metadata
-except ImportError:
-    # Python < 3.8
-    import importlib_metadata as metadata  # pragma: no cover
+from importlib import metadata
                 
 try:
     __version__ = metadata.version(__name__)
