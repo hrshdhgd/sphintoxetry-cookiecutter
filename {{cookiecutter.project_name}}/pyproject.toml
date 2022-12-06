@@ -7,7 +7,7 @@ license = "{{cookiecutter.license}}"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^{{cookiecutter.min_python_version}}"
 setuptools = "^65.5.0"
 tox = "^3.25.1"
 click = "^8.1.3"
