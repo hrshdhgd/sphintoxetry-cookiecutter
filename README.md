@@ -121,3 +121,20 @@ For viewing the difference, run `cruft diff`. This shows the difference between 
 
 After running `cruft update`, the project's boilerplate code will be updated to the latest version of the template.
 
+# Setting up PyPI release
+
+For the first time, you'll need to just run the following commands:
+```
+poetry build
+poetry publish -u YOUR_PYPI_USERNAME -p YOUR_PYPI_PASSWORD
+```
+This will release a 0.0.0 version of your project on PyPI.
+
+## Automating this via Github Release
+Go to the [PyPI account settings](https://pypi.org/manage/account/#two-factor) and select "Add API token". Create an API token and choose its scope: this token could either upload all the projects maintained or owned, its scope can be limited to just one project (preferred).
+
+Copy this token to your project's 'secrets' in the 'Settings' section of your github project.
+`Settings -> Secrets -> Actions -> New Repository Secret`
+Paste the copied token from PyPI into the new secret and call it `PYPI_TOKEN`.
+
+Now on releasing via Github, the project will automatically be released to PyPI as well.
