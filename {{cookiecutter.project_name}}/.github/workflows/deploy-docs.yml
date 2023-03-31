@@ -40,3 +40,4 @@ jobs:
         branch: gh-pages
         force: true
         folder: gh-pages
+        token: ${{ "{{" }} secrets.{{cookiecutter.github_token_for_doc_deployment}} {{ "}}" }}
